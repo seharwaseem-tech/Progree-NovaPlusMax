@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA Pulse Max — Move Different</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================================================
+     STICKY NAVIGATION
+=================================================== -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">NOVA<span class="brand-mark" aria-hidden="true"></span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#features">Features</a>
+      <a href="#story">Story</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#showcase" class="btn btn-solid nav-cta">Shop Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================================================
+     1. FULL-SCREEN HERO
+=================================================== -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <span class="ghost-text">PULSE</span>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-copy reveal-up">
+      <p class="eyebrow-line">Introducing the</p>
+      <h1 class="hero-title">PULSE&nbsp;MAX</h1>
+      <p class="hero-desc">
+        Built around a fresh air unit tuned for every stride — from the morning
+        commute to the last sprint of a five-a-side match. This is the shoe
+        for people who don't slow down between the two.
+      </p>
+      <div class="hero-btns">
+        <a href="#showcase" class="btn btn-solid">Shop Now</a>
+        <a href="#features" class="btn btn-ghost">Explore</a>
+      </div>
+    </div>
+
+    <div class="hero-shoe-wrap reveal-scale">
+      <img
+        src="https://images.pexels.com/photos/13536939/pexels-photo-13536939.jpeg?auto=compress&cs=tinysrgb&w=1260"
+        alt="NOVA Pulse Max sneaker, white colorway, shot on a reflective surface"
+        class="shoe-photo shoe-float">
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ===================================================
+     2. TRUST / STATS STRIP
+=================================================== -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat-item reveal-up">
+      <span class="stat-number" data-target="25" data-suffix="+">0</span>
+      <span class="stat-label">Years of innovation</span>
+    </div>
+    <div class="stat-item reveal-up">
+      <span class="stat-number" data-target="1" data-suffix="M+">0</span>
+      <span class="stat-label">Athletes wearing NOVA</span>
+    </div>
+    <div class="stat-item reveal-up">
+      <span class="stat-number" data-target="114" data-suffix="">0</span>
+      <span class="stat-label">Countries shipped to</span>
+    </div>
+    <div class="stat-item reveal-up">
+      <span class="stat-number" data-target="98" data-suffix="%">0</span>
+      <span class="stat-label">Comfort satisfaction</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     3. FEATURED PRODUCT SHOWCASE
+=================================================== -->
+<section class="showcase" id="showcase">
+  <div class="container showcase-inner">
+
+    <div class="showcase-visual reveal-left">
+      <img
+        src="https://images.pexels.com/photos/34003822/pexels-photo-34003822.jpeg?auto=compress&cs=tinysrgb&w=1260"
+        alt="NOVA Pulse Max, selected colorway"
+        class="shoe-photo shoe-large"
+        id="showcaseShoe">
+    </div>
+
+    <div class="showcase-info reveal-right">
+      <span class="eyebrow-line">Pulse Max · Unisex</span>
+      <h2>NOVA Pulse Max</h2>
+      <p class="price">$154.00</p>
+      <p class="showcase-desc">
+        A full-length air unit, a knit upper that moves with your foot, and a
+        rubber outsole grooved for grip in the rain or on the track. Pulse Max
+        is the one pair that keeps up with the rest of your day.
+      </p>
+
+      <div class="option-group">
+        <p class="option-label">Colorway</p>
+        <div class="swatches" id="swatches">
+          <button class="swatch" style="background:#0B0B0F" data-color="black" aria-label="Midnight Black colorway" aria-pressed="false"></button>
+          <button class="swatch" style="background:#F4F4F0; border-color:#D8D8D0" data-color="white" aria-label="Pure White colorway" aria-pressed="true"></button>
+          <button class="swatch" style="background:#FF5A45" data-color="coral" aria-label="Electric Coral colorway" aria-pressed="false"></button>
+          <button class="swatch" style="background:#3FA9F5" data-color="blue" aria-label="Ocean Blue colorway" aria-pressed="false"></button>
+        </div>
+      </div>
+
+      <div class="option-group">
+        <p class="option-label">Size (US)</p>
+        <div class="sizes" id="sizes">
+          <button class="size-btn">7</button>
+          <button class="size-btn">8</button>
+          <button class="size-btn active">9</button>
+          <button class="size-btn">10</button>
+          <button class="size-btn">11</button>
+          <button class="size-btn">12</button>
+        </div>
+      </div>
+
+      <button class="btn btn-solid btn-wide" id="addToCartBtn">Add to Cart</button>
+      <p class="cart-msg" id="cartMsg" aria-live="polite"></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================================================
+     4. "BUILT FOR MOVEMENT" FEATURES
+=================================================== -->
+<section class="features" id="features">
+  <div class="container">
+    <h2 class="section-title reveal-up">Built for movement</h2>
+    <p class="section-sub reveal-up">Four details that separate a good shoe from one you forget you're wearing.</p>
+
+    <div class="features-grid">
+      <article class="feature-card reveal-up">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 00-3 3v6a3 3 0 006 0V5a3 3 0 00-3-3z"/><path d="M19 10v1a7 7 0 01-14 0v-1M12 18v4M8 22h8"/></svg>
+        </div>
+        <h3>Maximum comfort</h3>
+        <p>A molded foam midsole cradles your heel and forefoot through every mile.</p>
+      </article>
+
+      <article class="feature-card reveal-up">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>
+        </div>
+        <h3>Air cushion tech</h3>
+        <p>A visible air unit under the heel absorbs impact and pushes energy back out.</p>
+      </article>
+
+      <article class="feature-card reveal-up">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 12h16M4 12l4-4M4 12l4 4"/></svg>
+        </div>
+        <h3>Lightweight design</h3>
+        <p>An engineered knit upper trims excess weight without giving up structure.</p>
+      </article>
+
+      <article class="feature-card reveal-up">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+        </div>
+        <h3>Premium materials</h3>
+        <p>Recycled rubber outsoles and durable stitching built to handle daily wear.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     5. BIG VISUAL STORY SECTION
+=================================================== -->
+<section class="story" id="story">
+  <div class="story-bg" aria-hidden="true">
+    <img src="https://images.pexels.com/photos/27486776/pexels-photo-27486776.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" class="story-photo">
+  </div>
+  <div class="container story-inner reveal-up">
+    <h2>Every stride has a story.</h2>
+    <p>From the first lace-up on a cold morning run to the last stretch of a long shift on your feet — Pulse Max was shaped by the people who actually wear it out.</p>
+  </div>
+</section>
+
+<!-- ===================================================
+     6. PRODUCT TECHNOLOGY SECTION
+=================================================== -->
+<section class="tech">
+  <div class="container tech-inner">
+    <div class="tech-visual reveal-left">
+      <img
+        src="https://images.pexels.com/photos/8147433/pexels-photo-8147433.jpeg?auto=compress&cs=tinysrgb&w=1000"
+        alt="Close-up detail of the Pulse Max upper and laces"
+        class="tech-photo">
+    </div>
+    <div class="tech-copy reveal-right">
+      <h2>Engineered from the ground up</h2>
+      <p>Every layer of Pulse Max does one job well, so the shoe as a whole does three.</p>
+      <ul class="tech-list">
+        <li><strong>Responsive air cushion</strong> — returns energy on push-off instead of absorbing it silently.</li>
+        <li><strong>Flexible outsole</strong> — grooved to bend naturally with your foot's own motion.</li>
+        <li><strong>Breathable upper</strong> — an open knit pattern that lets heat escape on long days.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     7. COLOR COLLECTION
+=================================================== -->
+<section class="collection" id="collection">
+  <div class="container">
+    <h2 class="section-title reveal-up">Pick your colorway</h2>
+    <p class="section-sub reveal-up">Same shoe, four different moods.</p>
+
+    <div class="collection-grid">
+
+      <article class="collection-card reveal-up">
+        <div class="collection-swatch">
+          <img src="https://images.pexels.com/photos/8079829/pexels-photo-8079829.jpeg?auto=compress&cs=tinysrgb&w=800" alt="NOVA Pulse Max, Midnight Black colorway">
+        </div>
+        <h3>Midnight Black</h3>
+        <p>Understated, goes with everything.</p>
+      </article>
+
+      <article class="collection-card reveal-up">
+        <div class="collection-swatch">
+          <img src="https://images.pexels.com/photos/34003822/pexels-photo-34003822.jpeg?auto=compress&cs=tinysrgb&w=800" alt="NOVA Pulse Max, Pure White colorway">
+        </div>
+        <h3>Pure White</h3>
+        <p>The clean slate colorway.</p>
+      </article>
+
+      <article class="collection-card reveal-up">
+        <div class="collection-swatch">
+          <img src="https://images.pexels.com/photos/1449844/pexels-photo-1449844.jpeg?auto=compress&cs=tinysrgb&w=800" alt="NOVA Pulse Max, Electric Coral colorway">
+        </div>
+        <h3>Electric Coral</h3>
+        <p>For when you want to be seen.</p>
+      </article>
+
+      <article class="collection-card reveal-up">
+        <div class="collection-swatch">
+          <img src="https://images.pexels.com/photos/13450843/pexels-photo-13450843.jpeg?auto=compress&cs=tinysrgb&w=800" alt="NOVA Pulse Max, Ocean Blue colorway">
+        </div>
+        <h3>Ocean Blue</h3>
+        <p>Cool tones, warm reviews.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     8. INTERACTIVE GALLERY
+=================================================== -->
+<section class="gallery">
+  <div class="container">
+    <h2 class="section-title reveal-up">A closer look</h2>
+
+    <div class="gallery-grid">
+      <div class="gallery-item reveal-scale">
+        <img src="https://images.pexels.com/photos/27516985/pexels-photo-27516985.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Pulse Max styled with denim">
+        <span>Styled look</span>
+      </div>
+      <div class="gallery-item reveal-scale">
+        <img src="https://images.pexels.com/photos/31451018/pexels-photo-31451018.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Three Pulse Max colorways on a wooden floor">
+        <span>The lineup</span>
+      </div>
+      <div class="gallery-item reveal-scale">
+        <img src="https://images.pexels.com/photos/36463721/pexels-photo-36463721.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Pulse Max colorways on a store shelf">
+        <span>In store</span>
+      </div>
+      <div class="gallery-item reveal-scale">
+        <img src="https://images.pexels.com/photos/7543637/pexels-photo-7543637.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Multiple Pulse Max colorways together">
+        <span>Full collection</span>
+      </div>
+      <div class="gallery-item reveal-scale">
+        <img src="https://images.pexels.com/photos/16599657/pexels-photo-16599657.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Pulse Max close-up, laced up">
+        <span>Laced up</span>
+      </div>
+      <div class="gallery-item reveal-scale">
+        <img src="https://images.pexels.com/photos/6961151/pexels-photo-6961151.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Pulse Max, close-up detail shot">
+        <span>Up close</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     9. CUSTOMER REVIEWS
+=================================================== -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <h2 class="section-title reveal-up">What people are saying</h2>
+
+    <div class="reviews-grid">
+      <article class="review-card reveal-up">
+        <div class="stars">★★★★★</div>
+        <p>"I run twice a week and stand the rest of the day for work. My feet stopped complaining the week I switched to these."</p>
+        <p class="review-name">— Amara O.</p>
+      </article>
+
+      <article class="review-card reveal-up">
+        <div class="stars">★★★★★</div>
+        <p>"The coral pair gets stopped constantly. Comfortable enough that I forget I'm wearing sneakers by lunch."</p>
+        <p class="review-name">— Diego R.</p>
+      </article>
+
+      <article class="review-card reveal-up">
+        <div class="stars">★★★★☆</div>
+        <p>"Took a few days to break in, but now they're the only shoe I reach for on match days."</p>
+        <p class="review-name">— Priya N.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     10. CALL TO ACTION BANNER
+=================================================== -->
+<section class="cta-banner">
+  <div class="cta-bg" aria-hidden="true"></div>
+  <div class="container cta-inner reveal-up">
+    <h2>Ready to move differently?</h2>
+    <div class="hero-btns">
+      <a href="#showcase" class="btn btn-solid">Shop Now</a>
+      <a href="#collection" class="btn btn-ghost">Explore Collection</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     11. NEWSLETTER
+=================================================== -->
+<section class="newsletter">
+  <div class="container newsletter-inner reveal-up">
+    <div>
+      <h2>Get early access to new drops</h2>
+      <p>One email a month. New colorways, restocks, nothing else.</p>
+    </div>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="you@email.com" required aria-label="Email address">
+      <button type="submit" class="btn btn-solid">Subscribe</button>
+    </form>
+  </div>
+  <p class="newsletter-msg" id="newsletterMsg" aria-live="polite"></p>
+</section>
+
+</main>
+
+<!-- ===================================================
+     FOOTER
+=================================================== -->
+<footer class="footer" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="brand footer-logo">NOVA<span class="brand-mark" aria-hidden="true"></span></p>
+      <p>Sportswear built around how people actually move.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick links</h4>
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#features">Features</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">TikTok</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:hello@nova-sport.example">hello@nova-sport.example</a>
+      <a href="tel:+10000000000">+1 (000) 000-0000</a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> NOVA Sportswear. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
